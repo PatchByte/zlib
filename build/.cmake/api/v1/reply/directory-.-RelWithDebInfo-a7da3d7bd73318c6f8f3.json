@@ -1,0 +1,119 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 198,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 204,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 207,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 210,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files/zlib/lib",
+			"paths" : 
+			[
+				"RelWithDebInfo/zlib.lib"
+			],
+			"targetId" : "zlib::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files/zlib/bin",
+			"paths" : 
+			[
+				"RelWithDebInfo/zlib.dll"
+			],
+			"targetId" : "zlib::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files/zlib/lib",
+			"paths" : 
+			[
+				"RelWithDebInfo/zlibstatic.lib"
+			],
+			"targetId" : "zlibstatic::@6890427a1f51a3e7e1df",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files/zlib/include",
+			"paths" : 
+			[
+				"build/zconf.h",
+				"zlib.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files/zlib/share/man/man3",
+			"paths" : 
+			[
+				"zlib.3"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files/zlib/share/pkgconfig",
+			"paths" : 
+			[
+				"build/zlib.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

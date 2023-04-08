@@ -1,0 +1,99 @@
+Determining size of off64_t failed with the following output:
+Change Dir: E:/zlib-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_03100.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R)-Build-Engine, Version 16.11.2+f32259642 für .NET Framework
+Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+
+  Microsoft (R) C/C++-Optimierungscompiler Version 19.29.30146 für x64
+  Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+  OFF64_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03100.dir\Debug\\" /Fd"cmTC_03100.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\zlib-fork\build\CMakeFiles\CheckTypeSize\OFF64_T.c"
+E:\zlib-fork\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29,12): error C2065: "off64_t": nichtdeklarierter Bezeichner [E:\zlib-fork\build\CMakeFiles\CMakeTmp\cmTC_03100.vcxproj]
+E:\zlib-fork\build\CMakeFiles\CheckTypeSize\OFF64_T.c(30,12): error C2065: "off64_t": nichtdeklarierter Bezeichner [E:\zlib-fork\build\CMakeFiles\CMakeTmp\cmTC_03100.vcxproj]
+E:\zlib-fork\build\CMakeFiles\CheckTypeSize\OFF64_T.c(31,12): error C2065: "off64_t": nichtdeklarierter Bezeichner [E:\zlib-fork\build\CMakeFiles\CMakeTmp\cmTC_03100.vcxproj]
+E:\zlib-fork\build\CMakeFiles\CheckTypeSize\OFF64_T.c(32,12): error C2065: "off64_t": nichtdeklarierter Bezeichner [E:\zlib-fork\build\CMakeFiles\CMakeTmp\cmTC_03100.vcxproj]
+E:\zlib-fork\build\CMakeFiles\CheckTypeSize\OFF64_T.c(33,12): error C2065: "off64_t": nichtdeklarierter Bezeichner [E:\zlib-fork\build\CMakeFiles\CMakeTmp\cmTC_03100.vcxproj]
+
+
+E:/zlib-fork/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: E:/zlib-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_98391.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R)-Build-Engine, Version 16.11.2+f32259642 für .NET Framework
+Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+
+  Microsoft (R) C/C++-Optimierungscompiler Version 19.29.30146 für x64
+  Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_98391.dir\Debug\\" /Fd"cmTC_98391.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol "fseeko" in Funktion "main". [E:\zlib-fork\build\CMakeFiles\CMakeTmp\cmTC_98391.vcxproj]
+E:\zlib-fork\build\CMakeFiles\CMakeTmp\Debug\cmTC_98391.exe : fatal error LNK1120: 1 nicht aufgelöste Externe [E:\zlib-fork\build\CMakeFiles\CMakeTmp\cmTC_98391.vcxproj]
+
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: E:/zlib-fork/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_3441e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R)-Build-Engine, Version 16.11.2+f32259642 für .NET Framework
+Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+
+  Microsoft (R) C/C++-Optimierungscompiler Version 19.29.30146 für x64
+  Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3441e.dir\Debug\\" /Fd"cmTC_3441e.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\zlib-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+E:\zlib-fork\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "unistd.h": No such file or directory [E:\zlib-fork\build\CMakeFiles\CMakeTmp\cmTC_3441e.vcxproj]
+
+
+

@@ -1,0 +1,8 @@
+E:/zlib-fork/build/CMakeFiles/zlib.dir
+E:/zlib-fork/build/CMakeFiles/zlibstatic.dir
+E:/zlib-fork/build/CMakeFiles/example.dir
+E:/zlib-fork/build/CMakeFiles/minigzip.dir
+E:/zlib-fork/build/CMakeFiles/RUN_TESTS.dir
+E:/zlib-fork/build/CMakeFiles/INSTALL.dir
+E:/zlib-fork/build/CMakeFiles/ALL_BUILD.dir
+E:/zlib-fork/build/CMakeFiles/ZERO_CHECK.dir
